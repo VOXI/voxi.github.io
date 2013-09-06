@@ -1,0 +1,22 @@
+// Variables
+$fontSizeDefault: 14px;
+
+$colorPrimary: #78c02c;
+
+$sizeSiteWidth: 1200px;
+
+// Mixins
+@mixin font-size($size: $fontSizeDefault){
+  font-size: $size;
+  font-size: ($size/$fontSizeDefault) * 1rem;
+}
+
+@mixin self-clear(){
+  &:before, &:after{
+    content: "";
+    display: table;
+  }
+  &:after{
+    clear: both;
+  }
+}

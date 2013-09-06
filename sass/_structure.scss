@@ -1,0 +1,44 @@
+.row, .small-column, .large-column, .full-column, .dream-form{
+  @include box-sizing(border-box);
+  padding: 0 20px;
+}
+
+.row{
+  margin: 0 auto;
+  max-width: $sizeSiteWidth;
+  width: 100%;
+  @include self-clear;
+}
+
+.content-section{
+  padding: 40px 0;
+}
+
+.small-column, .large-column, .full-width{
+  float: left;
+}
+
+.small-column{
+  width: 38%;
+}
+
+.large-column{
+  width: 62%;
+}
+
+
+// Specific structures
+
+.dream-form{
+  float: right;
+  max-width: $sizeSiteWidth;
+  padding-top: 250px;
+  padding-bottom: 200px;
+  width: 62%;
+  @include self-clear;
+}
+
+#primary-header{
+  position: fixed;
+  top: 0;
+}
