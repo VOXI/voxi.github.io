@@ -439,7 +439,7 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
 /**
  * Goal Quotes
  */
-/* line 274, ../sass/_style.scss */
+/* line 273, ../sass/_style.scss */
 .quotes-wrap {
   background: rgba(0, 0, 0, 0.3);
   bottom: 0;
@@ -448,7 +448,7 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   width: 100%;
 }
 
-/* line 285, ../sass/_style.scss */
+/* line 284, ../sass/_style.scss */
 .quote-footer {
   border-right: 1px solid rgba(255, 255, 255, 0.3);
   display: table-cell;
@@ -456,7 +456,7 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   width: 200px;
 }
 
-/* line 292, ../sass/_style.scss */
+/* line 291, ../sass/_style.scss */
 .quote-spacer {
   display: table-cell;
   height: 75px;
@@ -464,7 +464,7 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   vertical-align: middle;
 }
 
-/* line 300, ../sass/_style.scss */
+/* line 299, ../sass/_style.scss */
 .quote-content {
   font-size: 24px;
   font-size: 1.5rem;
@@ -474,16 +474,16 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   padding-left: 40px;
   vertical-align: middle;
 }
-/* line 308, ../sass/_style.scss */
+/* line 307, ../sass/_style.scss */
 .quote-content:before {
   content: "“";
 }
-/* line 311, ../sass/_style.scss */
+/* line 310, ../sass/_style.scss */
 .quote-content:after {
   content: "”";
 }
 
-/* line 316, ../sass/_style.scss */
+/* line 315, ../sass/_style.scss */
 .quote-source {
   display: table-cell;
   height: 75px;
@@ -493,11 +493,33 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   vertical-align: middle;
 }
 
-/* line 325, ../sass/_style.scss */
+/* line 324, ../sass/_style.scss */
 .quote-image {
   border-radius: 36px;
   float: left;
   margin-right: 10px;
   height: 75px;
   width: 75px;
+}
+
+/**
+ * Branding (temp)
+ */
+/* line 335, ../sass/_style.scss */
+.branding {
+  margin: -8px 0 0;
+}
+
+/* line 338, ../sass/_style.scss */
+.logo {
+  color: #3cc568;
+  font-weight: 700;
+}
+
+/* line 343, ../sass/_style.scss */
+.tagline {
+  color: #aaa;
+  font-size: 16px;
+  font-size: 1rem;
+  vertical-align: 40%;
 }
