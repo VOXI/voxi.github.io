@@ -77,12 +77,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   max-width: 1200px;
   width: 100%;
 }
-/* line 15, ../sass/_bits.scss */
+/* line 18, ../sass/_bits.scss */
 .row:before, .row:after {
   content: "";
   display: table;
 }
-/* line 19, ../sass/_bits.scss */
+/* line 22, ../sass/_bits.scss */
 .row:after {
   clear: both;
 }
@@ -107,53 +107,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 62%;
 }
 
-/* line 32, ../sass/_structure.scss */
-.dream-form {
-  float: right;
-  max-width: 1200px;
-  padding-top: 250px;
-  padding-bottom: 200px;
-  width: 62%;
-}
-/* line 15, ../sass/_bits.scss */
-.dream-form:before, .dream-form:after {
-  content: "";
-  display: table;
-}
-/* line 19, ../sass/_bits.scss */
-.dream-form:after {
-  clear: both;
-}
-
-/* line 41, ../sass/_structure.scss */
-#primary-header {
-  position: fixed;
-  top: 0;
-}
-
 /* line 2, ../sass/_style.scss */
 html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
 }
 
 /* line 8, ../sass/_style.scss */
 body {
-  background: #555;
+  min-width: 768px;
 }
 
 /* line 12, ../sass/_style.scss */
 h1 {
   font-size: 36px;
-  font-size: 2.57143rem;
+  font-size: 2.25rem;
   margin-bottom: 10px;
 }
 
 /* line 17, ../sass/_style.scss */
 h2 {
   font-size: 24px;
-  font-size: 1.71429rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -163,77 +139,183 @@ li {
 }
 
 /* line 26, ../sass/_style.scss */
+p {
+  line-height: 1.4;
+}
+
+/* line 30, ../sass/_style.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/* line 34, ../sass/_style.scss */
+i, em {
+  font-style: oblique;
+}
+
+/* line 38, ../sass/_style.scss */
 .opaque-background {
   background: #fff;
 }
 
-/* line 30, ../sass/_style.scss */
+/* line 42, ../sass/_style.scss */
 .transparent-background {
   color: #fff;
 }
 
-/* line 34, ../sass/_style.scss */
+/* line 46, ../sass/_style.scss */
+[hidden], .is-hidden {
+  display: none !important;
+}
+
+/* line 50, ../sass/_style.scss */
 a {
-  color: #9BF;
+  color: #00adef;
+  text-decoration: none;
 }
-
-/* line 39, ../sass/_style.scss */
-input[type="text"] {
-  border: 2px solid #78c02c;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 5px;
-  font-size: 16px;
-  font-size: 1.14286rem;
-  height: 50px;
-  padding: 0 20px;
-  width: 100%;
-}
-/* line 48, ../sass/_style.scss */
-input[type="text"]:hover, input[type="text"]:focus {
-  box-shadow: #78c02c 0 0 5px;
-  outline: none;
-}
-
 /* line 54, ../sass/_style.scss */
-button {
-  background: #78c02c;
-  border: #5e9722;
-  border-radius: 3px;
-  color: #fff;
-  font-size: 16px;
-  font-size: 1.14286rem;
-  font-weight: 700;
-  height: 32px;
-  padding: 0 20px;
-  text-shadow: #000 1px 1px 1px;
-  -webkit-appearance: button;
-}
-/* line 66, ../sass/_style.scss */
-button:hover, button:focus {
-  background: #85d135;
+a:hover, a:focus {
+  text-decoration: underline;
 }
 
-/* line 72, ../sass/_style.scss */
-.goal-area {
-  box-shadow: rgba(0, 0, 0, 0.25) 0 0 400px inset;
-  margin-top: 60px;
-}
-
-/* line 77, ../sass/_style.scss */
+/* line 59, ../sass/_style.scss */
 .small-print {
   color: #777;
   font-size: 12px;
-  font-size: 0.85714rem;
+  font-size: 0.75rem;
   font-weight: 400;
   text-align: right;
 }
 
 /**
+ * Forms
+ */
+/* line 71, ../sass/_style.scss */
+input[type="text"], input[type="email"], input[type="number"] {
+  border: 2px solid #3cc568;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 16px;
+  font-size: 1rem;
+  height: 50px;
+  padding: 0 20px;
+  width: 100%;
+}
+/* line 80, ../sass/_style.scss */
+input[type="text"]:hover, input[type="text"]:focus, input[type="email"]:hover, input[type="email"]:focus, input[type="number"]:hover, input[type="number"]:focus {
+  box-shadow: #3cc568 0 0 5px;
+  outline: none;
+}
+
+/* line 86, ../sass/_style.scss */
+label {
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-right: 10px;
+}
+
+/* line 93, ../sass/_style.scss */
+legend {
+  display: block;
+  width: 100%;
+}
+
+/* line 98, ../sass/_style.scss */
+.input-group {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 104, ../sass/_style.scss */
+.input-group .input-2up {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+}
+/* line 109, ../sass/_style.scss */
+.input-group .input-2up:nth-child(even) {
+  padding-left: 10px;
+}
+/* line 112, ../sass/_style.scss */
+.input-group .input-2up:nth-child(odd) {
+  padding-right: 10px;
+}
+
+/* line 118, ../sass/_style.scss */
+input[type="checkbox"] {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px;
+  height: 20px;
+  width: 20px;
+  -webkit-appearance: none;
+  vertical-align: -50%;
+}
+/* line 128, ../sass/_style.scss */
+input[type="checkbox"]:checked {
+  background: #3cc568;
+  border-color: #2f9f53;
+}
+
+/**
+ * Buttons
+ */
+/* line 138, ../sass/_style.scss */
+button, .button {
+  background: #35b25d;
+  border: #2f9f53;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 300;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 20px;
+  text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 1px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-appearance: none;
+}
+/* line 153, ../sass/_style.scss */
+button:hover, button:focus, .button:hover, .button:focus {
+  background: #50cb77;
+  text-decoration: none;
+}
+/* line 157, ../sass/_style.scss */
+button.secondary, .button.secondary {
+  background: none;
+  opacity: .5;
+}
+/* line 161, ../sass/_style.scss */
+button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+  background: none;
+  opacity: 1;
+}
+/* line 167, ../sass/_style.scss */
+button.is-disabled, .button.is-disabled {
+  color: #8bdca5;
+}
+/* line 170, ../sass/_style.scss */
+button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .button.is-disabled:focus {
+  background: #35b25d;
+  cursor: default;
+}
+
+/**
  * Site Header & Footer
  */
-/* line 87, ../sass/_style.scss */
+/* line 181, ../sass/_style.scss */
 #primary-header {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -241,19 +323,133 @@ button:hover, button:focus {
   box-shadow: rgba(0, 0, 0, 0.5) 2px 0 10px;
   height: 60px;
   padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/**
+ * Goal Area
+ */
+/* line 195, ../sass/_style.scss */
+.goal-area {
+  margin-top: 60px;
+}
+
+/* line 199, ../sass/_style.scss */
+.goal-area-content-wrap {
+  background: rgba(0, 0, 0, 0.3);
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0 400px inset;
+  overflow: hidden;
+  position: relative;
+  z-index: 99;
+}
+
+/* line 207, ../sass/_style.scss */
+.goal-area-content-wrap, .goal-area-background {
+  height: 620px;
+}
+
+/* line 211, ../sass/_style.scss */
+.goal-area-background {
+  background: #555555 url(/images/goals-bg-hiker-sunset.jpg) no-repeat 0 center;
+  background-size: 100% auto;
+  position: fixed;
+  min-width: 768px;
+  width: 100%;
+  z-index: -99;
+}
+
+/**
+ * Goal Form
+ */
+/* line 223, ../sass/_style.scss */
+.goal-form {
+  float: right;
+  max-width: 1200px;
+  margin-top: 200px;
+  width: 55%;
+  -webkit-transition: margin 0.3s ease-in-out;
+  -moz-transition: margin 0.3s ease-in-out;
+  -o-transition: margin 0.3s ease-in-out;
+  transition: margin 0.3s ease-in-out;
+}
+/* line 18, ../sass/_bits.scss */
+.goal-form:before, .goal-form:after {
+  content: "";
+  display: table;
+}
+/* line 22, ../sass/_bits.scss */
+.goal-form:after {
+  clear: both;
+}
+
+/* line 232, ../sass/_style.scss */
+.goal-panels-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 236, ../sass/_style.scss */
+.goal-panels {
+  height: 115px;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  -o-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+  width: 400%;
+}
+
+/* line 246, ../sass/_style.scss */
+.goal-panel {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin: 0;
+  padding: 0 20px;
+  width: 25%;
+}
+
+/* line 254, ../sass/_style.scss */
+.goal-form-controls {
+  margin-top: 20px;
+  padding: 0 20px;
+  text-align: right;
+}
+
+/* line 260, ../sass/_style.scss */
+.goal-panel-header {
+  display: block;
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 5px;
+  text-align: left;
   width: 100%;
 }
 
 /**
  * Goal Quotes
  */
-/* line 98, ../sass/_style.scss */
+/* line 275, ../sass/_style.scss */
 .quotes-wrap {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
+  bottom: 0;
   padding: 10px 0;
+  position: absolute;
+  width: 100%;
 }
 
-/* line 106, ../sass/_style.scss */
+/* line 286, ../sass/_style.scss */
 .quote-footer {
   border-right: 1px solid rgba(255, 255, 255, 0.3);
   display: table-cell;
@@ -261,7 +457,7 @@ button:hover, button:focus {
   width: 200px;
 }
 
-/* line 114, ../sass/_style.scss */
+/* line 293, ../sass/_style.scss */
 .quote-spacer {
   display: table-cell;
   height: 75px;
@@ -269,26 +465,26 @@ button:hover, button:focus {
   vertical-align: middle;
 }
 
-/* line 122, ../sass/_style.scss */
+/* line 301, ../sass/_style.scss */
 .quote-content {
   font-size: 24px;
-  font-size: 1.71429rem;
+  font-size: 1.5rem;
   display: table-cell;
   height: 75px;
   line-height: 1.3;
   padding-left: 40px;
   vertical-align: middle;
 }
-/* line 130, ../sass/_style.scss */
+/* line 309, ../sass/_style.scss */
 .quote-content:before {
   content: "“";
 }
-/* line 133, ../sass/_style.scss */
+/* line 312, ../sass/_style.scss */
 .quote-content:after {
   content: "”";
 }
 
-/* line 138, ../sass/_style.scss */
+/* line 317, ../sass/_style.scss */
 .quote-source {
   display: table-cell;
   height: 75px;
@@ -298,7 +494,7 @@ button:hover, button:focus {
   vertical-align: middle;
 }
 
-/* line 147, ../sass/_style.scss */
+/* line 326, ../sass/_style.scss */
 .quote-image {
   border-radius: 36px;
   float: left;

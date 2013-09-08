@@ -25,20 +25,3 @@
 .large-column{
   width: 62%;
 }
-
-
-// Specific structures
-
-.dream-form{
-  float: right;
-  max-width: $sizeSiteWidth;
-  padding-top: 250px;
-  padding-bottom: 200px;
-  width: 62%;
-  @include self-clear;
-}
-
-#primary-header{
-  position: fixed;
-  top: 0;
-}

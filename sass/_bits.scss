@@ -1,7 +1,10 @@
 // Variables
-$fontSizeDefault: 14px;
+$fontSizeDefault: 16px;
+$minWidth: 768px;
 
-$colorPrimary: #78c02c;
+// $colorPrimary: #78c02c; Orig green
+// $colorPrimary: #98df4d; Brighter Green
+$colorPrimary: #3cc568;
 
 $sizeSiteWidth: 1200px;
 
@@ -19,4 +22,8 @@ $sizeSiteWidth: 1200px;
   &:after{
     clear: both;
   }
+}
+
+@mixin border-box(){
+  @include box-sizing(border-box);
 }
