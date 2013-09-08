@@ -260,7 +260,7 @@ input[type="checkbox"] {
 }
 /* line 128, ../sass/_style.scss */
 input[type="checkbox"]:checked {
-  background: #3cc568;
+  background: #3cc568 url(../images/checkmark.png) no-repeat 1px 3px;
   border-color: #2f9f53;
 }
 
@@ -354,8 +354,7 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
 
 /* line 211, ../sass/_style.scss */
 .goal-area-background {
-  background: #555555 url(/images/goals-bg-hiker-sunset.jpg) no-repeat 0 center;
-  background-size: 100% auto;
+  background: #000;
   position: fixed;
   min-width: 768px;
   width: 100%;
@@ -365,7 +364,7 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
 /**
  * Goal Form
  */
-/* line 223, ../sass/_style.scss */
+/* line 222, ../sass/_style.scss */
 .goal-form {
   float: right;
   max-width: 1200px;
@@ -386,13 +385,13 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   clear: both;
 }
 
-/* line 232, ../sass/_style.scss */
+/* line 231, ../sass/_style.scss */
 .goal-panels-wrapper {
   overflow: hidden;
   width: 100%;
 }
 
-/* line 236, ../sass/_style.scss */
+/* line 235, ../sass/_style.scss */
 .goal-panels {
   height: 115px;
   list-style: none;
@@ -407,7 +406,7 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   width: 400%;
 }
 
-/* line 246, ../sass/_style.scss */
+/* line 245, ../sass/_style.scss */
 .goal-panel {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -418,14 +417,14 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   width: 25%;
 }
 
-/* line 254, ../sass/_style.scss */
+/* line 253, ../sass/_style.scss */
 .goal-form-controls {
   margin-top: 20px;
   padding: 0 20px;
   text-align: right;
 }
 
-/* line 260, ../sass/_style.scss */
+/* line 259, ../sass/_style.scss */
 .goal-panel-header {
   display: block;
   font-size: 36px;
@@ -440,7 +439,7 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
 /**
  * Goal Quotes
  */
-/* line 275, ../sass/_style.scss */
+/* line 274, ../sass/_style.scss */
 .quotes-wrap {
   background: rgba(0, 0, 0, 0.3);
   bottom: 0;
@@ -449,7 +448,7 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   width: 100%;
 }
 
-/* line 286, ../sass/_style.scss */
+/* line 285, ../sass/_style.scss */
 .quote-footer {
   border-right: 1px solid rgba(255, 255, 255, 0.3);
   display: table-cell;
@@ -457,7 +456,7 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   width: 200px;
 }
 
-/* line 293, ../sass/_style.scss */
+/* line 292, ../sass/_style.scss */
 .quote-spacer {
   display: table-cell;
   height: 75px;
@@ -465,7 +464,7 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   vertical-align: middle;
 }
 
-/* line 301, ../sass/_style.scss */
+/* line 300, ../sass/_style.scss */
 .quote-content {
   font-size: 24px;
   font-size: 1.5rem;
@@ -475,16 +474,16 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   padding-left: 40px;
   vertical-align: middle;
 }
-/* line 309, ../sass/_style.scss */
+/* line 308, ../sass/_style.scss */
 .quote-content:before {
   content: "“";
 }
-/* line 312, ../sass/_style.scss */
+/* line 311, ../sass/_style.scss */
 .quote-content:after {
   content: "”";
 }
 
-/* line 317, ../sass/_style.scss */
+/* line 316, ../sass/_style.scss */
 .quote-source {
   display: table-cell;
   height: 75px;
@@ -494,7 +493,7 @@ button.is-disabled:hover, button.is-disabled:focus, .button.is-disabled:hover, .
   vertical-align: middle;
 }
 
-/* line 326, ../sass/_style.scss */
+/* line 325, ../sass/_style.scss */
 .quote-image {
   border-radius: 36px;
   float: left;

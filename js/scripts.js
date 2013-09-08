@@ -8,6 +8,7 @@ $(document).ready(function () {
       Voxi.advanceGoalForm();
       Voxi.updatePanelPosition();
       Voxi.updateFormStructures();
+      $("#goal-area-background").backstretch("pause");
     }
   });
 
@@ -18,12 +19,17 @@ $(document).ready(function () {
     Voxi.updateFormStructures();
   });
 
+  $("#goal-area-background").backstretch(Voxi.backgroundImages, {duration: 5000, fade: 1000});
+
 });
 
 
 var Voxi = {
   $goalPanels: $("#goal-panels"),
-
+  backgroundImages: [
+    "../images/goals-bg-hiker-sunset.jpg",
+    "../images/curious_tabby_kitten-wide.jpg"
+  ],
   /**
    * Returns the current position of the panel
    * @return {Number} Integer representing the current panel being viewed
