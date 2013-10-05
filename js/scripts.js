@@ -27,8 +27,8 @@ $(document).ready(function () {
 var Voxi = {
   $goalPanels: $("#goal-panels"),
   backgroundImages: [
-    "../images/goals-bg-hiker-sunset.jpg",
-    "../images/curious_tabby_kitten-wide.jpg"
+    "images/goals-bg-hiker-sunset.jpg",
+    "images/curious_tabby_kitten-wide.jpg"
   ],
   /**
    * Returns the current position of the panel
