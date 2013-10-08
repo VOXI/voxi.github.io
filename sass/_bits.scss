@@ -3,12 +3,19 @@ $fontSizeDefault: 16px;
 $minWidth: 768px;
 
 // Sizes
-$heightHeader: 60px;
+$heightHeader: 54px;
+$heightHeaderLarge: 72px;
+$rhythm: 18px;
 
 // $colorPrimary: #78c02c; Orig green
 // $colorPrimary: #98df4d; Brighter Green
 $colorPrimary: #3cc568;
+$colorBorder: #ccc;
 $sizeSiteWidth: 1200px;
+
+@mixin border{
+  border: 1px solid $colorBorder;
+}
 
 // Mixins
 @mixin font-size($size: $fontSizeDefault){

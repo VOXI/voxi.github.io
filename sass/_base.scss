@@ -3,26 +3,48 @@ html, body{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: $fontSizeDefault;
   font-weight: 300;
+  line-height: $rhythm;
 }
-
-
 
 h1{
-  @include font-size(36px);
-  margin-bottom: 10px;
+  @include font-size($rhythm * 2);
+  line-height: 1;
+  margin-bottom: $rhythm;
 }
 
+
 h2{
-  @include font-size(24px);
+  @include font-size($rhythm * 1.5);
   font-weight: 700;
+  line-height: 1;
+  margin-bottom: $rhythm;
+}
+
+h3{
+  @include font-size($rhythm * 1.25);
+  font-weight: 700;
+  line-height: ($rhythm * 1.5);
 }
 
 li{
-  margin: 10px 0;
+  margin: $rhythm 0;
+}
+
+ol{
+  list-style: decimal outside;
+}
+
+ul{
+  list-style: disc outside;
+}
+
+ol, ul{
+  margin: 0 0 $rhythm (1em * 1.5);
 }
 
 p{
-  line-height: 1.4;
+  line-height: $rhythm * 1.5;
+  margin: 0 0 $rhythm;
 }
 
 b, strong{
@@ -31,6 +53,11 @@ b, strong{
 
 i, em{
   font-style: oblique;
+}
+
+pre{
+  @include border;
+  @include box-sizing(border-box);
 }
 
 .opaque-background{
@@ -170,21 +197,6 @@ button, .button{
       cursor: default;
     }
   }
-}
-
-
-/**
- * Site Header & Footer
- */
-#primary-header{
-  @include box-sizing(border-box);
-  box-shadow: rgba(0,0,0,.5) 2px 0 10px;
-  height: $heightHeader;
-  padding: 20px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 999;
 }
 
 /**
@@ -327,19 +339,3 @@ button, .button{
   width: 75px;
 }
 
-/**
- * Branding (temp)
- */
-.branding{
-  margin: -8px 0 0;
-}
-.logo{
-  color: $colorPrimary;
-  font-weight: 700;
-
-}
-.tagline{
-  color: #aaa;
-  @include font-size(16px);
-  vertical-align: 40%;
-}
