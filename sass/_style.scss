@@ -5,9 +5,7 @@ html, body{
   font-weight: 300;
 }
 
-body {
-  min-width: $minWidth;
-}
+
 
 h1{
   @include font-size(36px);
@@ -181,7 +179,7 @@ button, .button{
 #primary-header{
   @include box-sizing(border-box);
   box-shadow: rgba(0,0,0,.5) 2px 0 10px;
-  height: 60px;
+  height: $heightHeader;
   padding: 20px 0;
   position: fixed;
   top: 0;

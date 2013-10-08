@@ -2,10 +2,12 @@
 $fontSizeDefault: 16px;
 $minWidth: 768px;
 
+// Sizes
+$heightHeader: 60px;
+
 // $colorPrimary: #78c02c; Orig green
 // $colorPrimary: #98df4d; Brighter Green
 $colorPrimary: #3cc568;
-
 $sizeSiteWidth: 1200px;
 
 // Mixins
@@ -26,4 +28,16 @@ $sizeSiteWidth: 1200px;
 
 @mixin border-box(){
   @include box-sizing(border-box);
+}
+
+// Grid Mixins
+@mixin grid($totalColumns: 5, $class: "small"){
+  @for $i from 1 through $totalColumns{
+    .#{$class}-#{$i} {
+      width: ($i / $totalColumns) * 100%;
+    }
+  }
+  .#{$class}-full{
+    width: 100%;
+  }
 }

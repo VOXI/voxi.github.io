@@ -1,27 +1,15 @@
-.row, .small-column, .large-column, .full-column, .dream-form{
-  @include box-sizing(border-box);
-  padding: 0 20px;
+body {
+  margin-top: $heightHeader;
 }
 
 .row{
-  margin: 0 auto;
-  max-width: $sizeSiteWidth;
-  width: 100%;
-  @include self-clear;
 }
 
-.content-section{
-  padding: 40px 0;
-}
-
-.small-column, .large-column, .full-width{
+.columns, .column{
+  @include box-sizing(border-box);
+  display: block;
   float: left;
+  padding: 0 10px;
 }
 
-.small-column{
-  width: 38%;
-}
-
-.large-column{
-  width: 62%;
-}
+@include grid();
