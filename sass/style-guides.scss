@@ -1,5 +1,7 @@
 // Styles specifically for the style guide
 
 .sg{
-  
+  &.titles{
+    font-weight: bold;
+  }
 }
