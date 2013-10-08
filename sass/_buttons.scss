@@ -1,0 +1,42 @@
+/**
+ * Buttons
+ */
+
+button, .button{
+  background: darken($colorPrimary, 5%);
+  border: darken($colorPrimary, 10%);
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  @include font-size(18px);
+  font-weight: 300;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 20px;
+  text-shadow: rgba(0,0,0,.5) 0px -1px 1px;
+  @include transition(all .2s ease-in-out);
+  -webkit-appearance: none;
+
+  &:hover, &:focus{
+    background: lighten($colorPrimary, 5%);
+    text-decoration: none;
+  }
+  &.secondary{
+    background: none;
+    opacity: .5;
+
+    &:hover, &:focus{
+      background: none;
+      opacity: 1;
+    }
+  }
+
+  &.is-disabled{
+    color: lighten($colorPrimary, 20%);
+
+    &:hover, &:focus{
+      background: darken($colorPrimary, 5%);
+      cursor: default;
+    }
+  }
+}

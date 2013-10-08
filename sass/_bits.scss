@@ -6,6 +6,8 @@ $minWidth: 768px;
 $heightHeader: 54px;
 $heightHeaderLarge: 72px;
 $rhythm: 18px;
+$sizeGutter: $rhythm;
+$sizeGutterHalf: ($sizeGutter / 2);
 
 // $colorPrimary: #78c02c; Orig green
 // $colorPrimary: #98df4d; Brighter Green

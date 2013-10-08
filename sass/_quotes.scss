@@ -1,0 +1,61 @@
+/**
+ * Goal Quotes
+ */
+.quotes-wrap{
+  background: rgba(0,0,0,.3);
+  bottom: 0;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+}
+
+.goal-quote{
+}
+
+.quote-footer{
+  border-right: 1px solid rgba(255,255,255,.3);
+  display: table-cell;
+  height: 75px;
+  width: 200px;
+}
+
+.quote-spacer{
+  display: table-cell;
+  height: 75px;
+  line-height: 1.3;
+  vertical-align: middle;
+  
+}
+
+.quote-content{
+  @include font-size(24px);
+  display: table-cell;
+  height: 75px;
+  line-height: 1.3;
+  padding-left: 40px;
+  vertical-align: middle;
+
+  &:before{
+    content: "“";
+  }
+  &:after{
+    content: "”";
+  }
+}
+
+.quote-source{
+  display: table-cell;
+  height: 75px;
+  line-height: 1.3;
+  margin-top: 15px;
+  width: 62%;
+  vertical-align: middle;
+}
+
+.quote-image{
+  border-radius: 36px;
+  float: left;
+  margin-right: 10px;
+  height: 75px;
+  width: 75px;
+}
