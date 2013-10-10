@@ -2,9 +2,111 @@
 title: Welcome to Middleman
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<section class="transparent-background goal-area">
+  <div id="goal-area-background" class="goal-area-background"></div>
+  <div id="goal-area-content-wrap" class="goal-area-content-wrap">
+    <div class="row">
+      <form id="goal-form" class="goal-form">
+        <div class="goal-panels-wrapper">
+          <ul id="goal-panels" class="goal-panels" data-panel-position="1">
+            <li class="goal-panel is-showing">
+              <!-- Someday I would like to ... -->
+              <label class="goal-panel-header">What is your <strong>dream?</strong></label>
+              <input type="text" placeholder="ex., I want to climb a mountain ..." autofocus />
+            </li>
+            <li class="goal-panel">
+              <fieldset>
+                <legend class="goal-panel-header">What would help?</legend>
+                <label><input type="checkbox"> Knowledge?</label>
+                <label><input type="checkbox"> Partners?</label>
+                <label><input type="checkbox"> Deals?</label>
+                <label><input type="checkbox"> Time?</label> 
+              </fieldset>
+            </li>
+            <li class="goal-panel">
+              <fieldset>
+                <legend class="goal-panel-header">Contact Information</legend>
+                <p>Our dream is to help you achieve yours. We're building an online platform to remove the obstacles between you and your dreams. Enter your information below to ...</p>
+
+                <div class="input-group">
+                  <p class="input-2up">
+                    <label>Name</label>
+                    <input type="text" placeholder="First &amp; Last" />
+                  </p>
+                  
+                  <p class="input-2up">
+                    <label>Email</label>
+                    <input type="email" placeholder="dreamer@voxi.com" />
+                  </p>
+                </div>
+
+                <p>
+                  <label><input type="checkbox" checked /> Can we share your dream on our site?</label></p>
+                </p>
+              </fieldset>
+            </li>
+            <li class="goal-panel">
+              <p class="goal-panel-header">Thank You</p>
+              <p>We believe that shared dreams are more powerful. Share yours with friends by using the buttons below.</p>
+              <!-- AddThis Button BEGIN -->
+              <div class="addthis_toolbox addthis_default_style ">
+              <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+              <a class="addthis_button_tweet"></a>
+              <a class="addthis_button_pinterest_pinit"></a>
+              <a class="addthis_counter addthis_pill_style"></a>
+              </div>
+              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-522c1d87448728fc"></script>
+              <!-- AddThis Button END -->
+            </li>
+          </ul>
+        </div>
+        
+        <menu class="goal-form-controls">
+          <a href="#" id="goal-form-back-button" class="secondary button is-hidden">&larr; Back</a>
+          <a href="#" id="goal-form-advance-button" class="button">Next &rarr;</a>
+        </menu>
+      </form>
+    </div>
+    
+    <div class="quotes-wrap">
+      <div class="row">
+        <div class="full-column">
+          <ul class="goal-quotes-list">
+            <li>
+              <blockquote class="goal-quote">
+                <footer class="quote-footer">
+                  <img src="images/profile-placholder.jpg" class="quote-image">
+                  <p class="quote-source">Max C<br>
+                  Chicago, IL</p>
+                </footer>
+                <div class="quote-content">
+                  I want to see the sunset from the top of Mount Fuji!
+                </div>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</section>
+<section class="opaque-background content-section">
+  <div class="row">
+    <div class="large-column">
+      <div class="video">
+       <iframe src="//player.vimeo.com/video/73665417"  width="100%" height="382" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>        
+
+    <div class="small-column">
+      <h2>What is VOXi?</h2>
+      <ul>
+        <li>Online platform for dreamers to achieve their goals</li>
+        <li>A way for you to meet others with similar dreams</li>
+        <li>A way to remove obstacles between you and your dreams</li>
+      </ul>
+    </div>
+  </div>
+</section>
