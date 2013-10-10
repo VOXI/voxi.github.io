@@ -2,15 +2,21 @@
 <html>
   <%= partial "partials/head" %>
 
-  <body class="<%= page_classes %>">
+  <body class="forms <%= page_classes %>">
     <header id="primary-header" class="opaque-background">
       <div class="row">
-        <h1 class="branding"><a href="/" class="logo">VOXi</a> <span class="tagline">Live more life</span></h1>
+        <h1 class="branding"><a href="/" class="logo">VOXi</a></h1>
       </div>
     </header>
 
     <div class="content-wrap">
-      <%= yield %>
+      <section class="container">
+        <div class="row">
+          <div class="large-centered small-full column">
+            <%= yield %>
+          </div>
+        </div>
+      </section>
     </div>
 
     <footer class="opaque-background content-section">

@@ -6,6 +6,11 @@ html, body{
   line-height: $rhythm;
 }
 
+body{
+  background: #fff;
+  text-rendering: optimizeLegibility;
+}
+
 h1{
   @include font-size($rhythm * 2);
   line-height: 1;
@@ -57,7 +62,7 @@ i, em{
 
 pre{
   @include border;
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 }
 
 .opaque-background{
@@ -114,3 +119,13 @@ a{
   z-index: -99;
 }
 
+// Content wrapper
+.content-wrap{
+  background: $colorBg;
+  @include self-clear;
+  padding-top: $rhythm;
+
+  @include media($screenLarge){
+    min-height: 450px;
+  }
+}

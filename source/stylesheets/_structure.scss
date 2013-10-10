@@ -4,10 +4,11 @@ body {
 
 .row{
   margin-bottom: $sizeGutter;
+  @include self-clear;
 }
 
 .columns, .column{
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   display: block;
   float: left;
   padding: 0 10px;
@@ -15,3 +16,13 @@ body {
 }
 
 @include grid();
+
+@include media($screenLarge){
+  @include grid(12, "large");
+
+  .large-centered{
+    float: none;
+    margin: 0 auto;
+    width: 50%;
+  }
+}

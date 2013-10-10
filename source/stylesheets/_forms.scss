@@ -3,7 +3,7 @@
  */
 input[type="text"], input[type="email"], input[type="number"]{
   border:2px solid $colorPrimary;
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   border-radius: 5px;
   @include font-size(16px);
   height: 50px;
@@ -36,7 +36,7 @@ legend{
 
   .input-2up{
     float: left;
-    @include border-box;
+    box-sizing: border-box;
     width: 50%;
 
     &:nth-child(even){
@@ -73,7 +73,7 @@ input[type="checkbox"]{
   margin-top: 200px;
   width: 55%;
   @include self-clear;
-  @include transition(margin .3s ease-in-out);
+  transition: margin .3s ease-in-out;
 }
 
 .goal-panels-wrapper{
@@ -87,11 +87,11 @@ input[type="checkbox"]{
   overflow: hidden;
   padding: 0;
   position: relative;
-  @include transition(.4s all ease-in-out);
+  transition: .4s all ease-in-out;
   width: 400%;
 }
 .goal-panel{
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   float: left;
   margin: 0;
   padding: 0 20px;

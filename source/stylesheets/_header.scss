@@ -2,8 +2,8 @@
  * Site Header & Footer
  */
 #primary-header{
-  @include box-sizing(border-box);
-  box-shadow: rgba(0,0,0,.5) 2px 0 10px;
+  box-sizing: border-box;
+  box-shadow: rgba(0,0,0,.3) 1px 0 2px;
   height: $heightHeader;
   padding: 20px 0;
   position: fixed;
