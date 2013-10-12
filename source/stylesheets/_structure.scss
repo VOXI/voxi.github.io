@@ -3,7 +3,7 @@ body {
 }
 
 .row{
-  margin-bottom: $sizeGutter;
+  margin: 0 auto $sizeGutter;
   @include self-clear;
 }
 
@@ -15,7 +15,7 @@ body {
   margin: 0 0 $sizeGutter;
 }
 
-@include grid();
+@include grid(5, "small");
 
 @include media($screenLarge){
   @include grid(12, "large");

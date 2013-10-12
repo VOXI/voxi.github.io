@@ -13,11 +13,7 @@ layout: false
   <%= stylesheet_link_tag "screen" %>
 </head>
 <body>
-  <header id="primary-header" class="opaque-background">
-    <div class="row">
-      <h1 class="branding"><a href="#" class="logo">VOXi</a> <span class="tagline">Live more life</span></h1>
-    </div>
-  </header>
+  <%= partial "partials/site-header" %>
   <div class="content-wrap">
     <section class="row">
       <div class="small-full large-4 columns">
@@ -54,12 +50,12 @@ layout: false
       </div>
     </section>
     <section class="row">
-      <div class="lwarge-4 small-full columns">
+      <div class="large-4 small-full columns">
         <h1 class="sg titles">Forms</h1>
       </div>
       <div class="large-8 small-full columns">
         <ul class="form list">
-          <li>w
+          <li>
             <label>Text Input</label>
             <input type="text" placeholder="Placeholder text">
           </li>
@@ -91,19 +87,13 @@ layout: false
         <h1 class="sg titles">Buttons</h1>
       </div>
       <div class="large-8 small-full columns">
-        <a href="#" class="secondary button">&larr; Back</a>
-        <a href="#" class="button">Next &rarr;</a>
+        <a href="#" class="cancel button">Cancel Buttons</a>
+        <a href="#" class="primary button">Primary Action</a>
+        <a href="#" class="button">Default Action</a>
       </div>
     </section>
   </div>
 
-  <footer id="site-footer" class="opaque-background content-section">
-    <div class="row">
-      <div class="large-full small-full columns">
-        <p class="small-print">Copyright &copy; 2013, VOXi LLC | <a href="#">Privacy Policy</a></p>
-      </div>
-    </div>
-  </footer>
-  <%= javascript_include_tag  "all" %>
+  <%= partial "partials/site-footer" %>
 </body>
 </html>
