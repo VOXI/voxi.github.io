@@ -22,7 +22,8 @@ $(document).ready(function () {
   $(".index .content-wrap").backstretch(Voxi.backgroundImages, {
     duration: 5000,
     fade: 1000
-  }).css("background", "#f5f5f3");
+  });
+  $(".index .content-wrap").attr("style", "background-image: none; position: relative; z-index: 0;");
 
 });
 

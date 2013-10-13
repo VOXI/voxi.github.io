@@ -3,11 +3,7 @@
   <%= partial "partials/head" %>
 
   <body class="forms <%= page_classes %>">
-    <header id="primary-header" class="opaque-background">
-      <div class="row">
-        <h1 class="branding"><a href="/" class="logo">VOXi</a></h1>
-      </div>
-    </header>
+    <%= partial "partials/site-header" %>
 
     <div class="content-wrap">
       <section class="container">
@@ -19,13 +15,6 @@
       </section>
     </div>
 
-    <footer class="opaque-background content-section">
-      <div class="row">
-        <div class="full-column">
-          <p class="small-print">Copyright &copy; 2013, VOXi LLC | <a href="/legal/privacy-policy">Privacy Policy</a></p>
-        </div>
-      </div>
-    </footer>
-    <%= javascript_include_tag  "all" %>
+    <%= partial "partials/site-footer" %>
   </body>
 </html>

@@ -7,11 +7,12 @@
   }
 
   @include media($screenLarge){
-    background: #000 url(/images/homepage-background/climbing.jpg);
+    background: #000 url(/images/homepage-background/climbing.jpg) no-repeat center center;
+    background-size: 100% auto;
     box-sizing: border-box;
-    background: #000;
     padding-top: $rhythm * 4;
     padding-bottom: 150px;
+    position: relative;
   }
 }
 .homepage-content{

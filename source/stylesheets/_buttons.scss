@@ -20,6 +20,7 @@ button, .button, .buttons{
   &:hover, &:focus{
     background: darken($colorBorder, 10%);
     text-decoration: none;
+    outline: none;
   }
 
   &.large{
