@@ -1,7 +1,28 @@
 ---
 
 ---
-<section class="row homepage-content">
+<%
+  max = {
+    image: "max-chopovsky.jpg",
+    name: "Max C"
+  }
+  carolyn = {
+    image: "carolyn-chandler.jpg",
+    name: "Carolyn C"
+  }
+  christian = {
+    image: "christian-picciolini.jpg",
+    name: "Christian P"
+  }
+  ezekiel = {
+    image: "ezekiel-binion.jpg",
+    name: "Ezekiel B"
+  }
+  kevin = {
+    image: "kevin-solorio.jpg",
+    name: "Kevin S"
+  }
+%><section class="row homepage-content">
   <div class="small-full large-6 columns">
     <h1>Accomplishing your dreams is hard.<br class="mobile-hide">
     Doing it by yourself is harder.</h1>
@@ -14,30 +35,115 @@
   <div class="quotes-wrap">
     <div class="quotes-inner-wrap">
       <ul class="goal-quotes list">
-        <li class="current">
-          <blockquote class="goal-quote">
-            <footer class="quote-footer">
-              <img src="images/profile-placholder.jpg" class="quote-image">
-              <p class="quote-source">Max C<br>
-              Chicago, IL</p>
-            </footer>
-            <div class="quote-content">
-              I want to see the sunset from the top of Mount Fuji!
-            </div>
-          </blockquote>
-        </li>
-        <li class="">
-          <blockquote class="goal-quote">
-            <footer class="quote-footer">
-              <img src="images/profile-placholder.jpg" class="quote-image">
-              <p class="quote-source">Max C<br>
-              Chicago, IL</p>
-            </footer>
-            <div class="quote-content">
-              I want to see the sunset from the top of Mount Fuji! A lot more text just for testing purposes. I need this one to be a lot of lines.
-            </div>
-          </blockquote>
-        </li>
+        <%= partial("partials/quote", locals: {
+          class_name: "current",
+          person: ezekiel,
+          quote: "See the Seven Wonders of the World"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: christian,
+          quote: "Play golf at St. Andrews in Scotland"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: carolyn,
+          quote: "Travel to China to see the Great Wall, Terra Cotta soldiers, and Hong
+Kong"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: max,
+          quote: "Open for Armin Van Buuren"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: kevin,
+          quote: "Get my instrument rating (aviation)"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: ezekiel,
+          quote: "Canoe the Chicago River"
+        }) %>
+
+        <%= partial("partials/quote", locals: {
+          person: christian,
+          quote: "Ride a motorcycle throughout Europe"
+        }) %>
+
+        <%= partial("partials/quote", locals: {
+          person: carolyn,
+          quote: "Find design inspiration in Japan"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: max,
+          quote: "Direct a music video played on TV"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: ezekiel,
+          quote: "Learn IOS development"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: christian,
+          quote: "Take batting practice at Fenway Park"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: kevin,
+          quote: "Attend a Stanley Cup Game"
+        }) %>
+
+
+        <%= partial("partials/quote", locals: {
+          person: carolyn,
+          quote: "Walk the Walk of Fame in Los Angeles"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: christian,
+          quote: "Visit the Great Pyramids of Giza"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: max,
+          quote: "Eat at Sukiyabashi Jiro"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: kevin,
+          quote: "Start a successful company"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: ezekiel,
+          quote: "Create a camp that makes design and technology fun for underprivileged youth"
+        }) %>
+
+        <%= partial("partials/quote", locals: {
+          person: carolyn,
+          quote: "Track wild lemurs in Madagascar"
+        }) %>
+
+        <%= partial("partials/quote", locals: {
+          person: kevin,
+          quote: "Tour Europe"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: max,
+          quote: "Run a marathon"
+        }) %>
+
+        <%= partial("partials/quote", locals: {
+          person: christian,
+          quote: "Attend a Native American Sweat Lodge Ceremony"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: carolyn,
+          quote: "See the Earth from space"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: kevin,
+          quote: "Visit Australia"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: ezekiel,
+          quote: "Buy my first home"
+        }) %>
+        <%= partial("partials/quote", locals: {
+          person: max,
+          quote: "Fly a jet"
+        }) %>
       </ul>
     </div>
   </div>

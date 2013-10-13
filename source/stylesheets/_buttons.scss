@@ -3,7 +3,8 @@
  */
 button, .button, .buttons{
   background: darken($colorBorder, 15%);
-  border: darken($colorBorder, 20%);
+  border: 1px solid darken($colorBorder, 16%);
+  border-bottom: 2px solid darken($colorBorder, 30%);
   border-radius: 3px;
   color: #fff;
   display: inline-block;
@@ -28,7 +29,8 @@ button, .button, .buttons{
 
   &.primary{
     background: darken($colorPrimary, 5%);
-    border: darken($colorPrimary, 10%);
+    border-color: darken($colorPrimary, 6%);
+    border-bottom: 2px solid darken($colorPrimary, 15%);
 
     &:hover, &:focus{
       background: lighten($colorPrimary, 5%);
@@ -38,6 +40,7 @@ button, .button, .buttons{
 
   &.cancel{
     background: none;
+    border: none;
     border-bottom: 1px dotted darken($colorBorder, 10%);
     border-radius: 0;
     color: inherit;

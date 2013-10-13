@@ -83,6 +83,7 @@ a{
 
   &:hover, &:focus{
     text-decoration: underline;
+    outline: none;
   }
 }
 
@@ -148,3 +149,6 @@ a{
 .right{
   text-align: right;
 }
+ small{
+  font-size: .66666em;
+ }

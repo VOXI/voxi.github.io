@@ -1,0 +1,12 @@
+<li class="<%= if defined?(class_name) then class_name end %>">
+  <blockquote class="goal-quote">
+    <footer class="quote-footer">
+      <img src="/images/People/<%= person[:image] %>" class="quote-image">
+      <p class="quote-source"><%= person[:name] %><br>
+      Chicago, IL</p>
+    </footer>
+    <div class="quote-content">
+      <%= quote %>
+    </div>
+  </blockquote>
+</li>

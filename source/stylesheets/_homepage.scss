@@ -5,19 +5,19 @@
       display: block;
     }
   }
-  
+
   @include media($screenLarge){
-    background: #000;
+    background: #000 url(/images/homepage-background/climbing.jpg);
     box-sizing: border-box;
     background: #000;
-    padding-top: $rhythm * 3;
+    padding-top: $rhythm * 4;
     padding-bottom: 150px;
   }
 }
 .homepage-content{
   @include media($screenLarge){
     color: #fff;
-    text-shadow: $inputHoverShadow;
+    text-shadow: rgba(0,0,0,.5) 0 0 5px;
   }
 
   .button{

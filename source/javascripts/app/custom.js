@@ -19,7 +19,10 @@ $(document).ready(function () {
     Voxi.updateFormStructures();
   });
 
-  $(".index .content-wrap").backstretch(Voxi.backgroundImages, {duration: 5000, fade: 1000}).css("background", "#f5f5f3");
+  $(".index .content-wrap").backstretch(Voxi.backgroundImages, {
+    duration: 5000,
+    fade: 1000
+  }).css("background", "#f5f5f3");
 
 });
 
@@ -27,8 +30,13 @@ $(document).ready(function () {
 var Voxi = {
   $goalPanels: $("#goal-panels"),
   backgroundImages: [
-    "images/goals-bg-hiker-sunset.jpg",
-    "images/curious_tabby_kitten-wide.jpg"
+    "/images/homepage-background/climbing.jpg",
+    "/images/homepage-background/golf.jpg",
+    "/images/homepage-background/great-wall-china.jpg",
+    "/images/homepage-background/dj.jpg",
+    "/images/homepage-background/para-sailing.jpg",
+    "/images/homepage-background/canoe.jpg",
+    "/images/homepage-background/paris-eiffel-tower.jpg"
   ],
   /**
    * Returns the current position of the panel
