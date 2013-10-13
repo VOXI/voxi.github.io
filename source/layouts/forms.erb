@@ -1,20 +1,18 @@
-<!doctype html>
-<html>
-  <%= partial "partials/head" %>
+<%= partial "partials/head" %>
 
-  <body class="forms <%= page_classes %>">
-    <%= partial "partials/site-header" %>
+<body class="forms <%= page_classes %>">
+  <%= partial "partials/site-header" %>
 
-    <div class="content-wrap">
-      <section class="container">
-        <div class="row">
-          <div class="large-centered small-full column">
-            <%= yield %>
-          </div>
+  <div class="content-wrap">
+    <section class="container">
+      <div class="row">
+        <div class="large-centered small-full column">
+          <%= yield %>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </div>
 
-    <%= partial "partials/site-footer" %>
-  </body>
+  <%= partial "partials/site-footer" %>
+</body>
 </html>
