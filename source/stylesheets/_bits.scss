@@ -23,6 +23,8 @@ $colorLink: rgb(0, 173, 239);
 
 $inputHoverShadow: rgba(0,0,0,.2) 0 0 5px;
 
+$easeInOut: cubic-bezier(0.2, 0.1, 0.1, 1);
+
 @mixin border{
   border: 1px solid $colorBorder;
 }
@@ -51,6 +53,23 @@ $inputHoverShadow: rgba(0,0,0,.2) 0 0 5px;
   @media screen and (min-width: $size){
     @content;
   }
+}
+
+@mixin keyframes($name){
+  @-moz-keyframes $name{
+    @content;
+  }
+  @-webkit-keyframes $name{
+    @content;
+  }
+  @keyframes $name{
+    @content;
+  }
+}
+
+@mixin animation($value){
+  -webkit-animation: $value;
+  animation: $value;
 }
 
 // Grid Mixins

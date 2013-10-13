@@ -1,6 +1,11 @@
 /**
  * Forms
  */
+
+.form.list li{
+  margin: 0 0 $rhythm;
+}
+
 %textInputBase{
   border:1px solid $colorBorder;
   box-sizing: border-box;
@@ -128,10 +133,4 @@ input[type="checkbox"]{
   margin-bottom: 5px;
   text-align: left;
   width: 100%;
-}
-
-.list{
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
