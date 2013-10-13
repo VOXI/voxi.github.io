@@ -43,5 +43,14 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.build_before = true
+
+  # Optional Settings
+  # deploy.remote = "custom-remote" # remote name or git url, default: origin
+  # deploy.branch = "custom-branch" # default: gh-pages
+end
+
 # Reload the browser automatically whenever files change
 activate :livereload
