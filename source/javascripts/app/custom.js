@@ -1,5 +1,5 @@
 // Listeners and necessary setup
-$(document).ready(function () {  
+$(document).ready(function () {
 
   window.console.log("Window is ready.");
   $("#goal-form-advance-button").click(function(e) {
@@ -19,7 +19,7 @@ $(document).ready(function () {
     Voxi.updateFormStructures();
   });
 
-  $("#goal-area-background").backstretch(Voxi.backgroundImages, {duration: 5000, fade: 1000});
+  $(".index .content-wrap").backstretch(Voxi.backgroundImages, {duration: 5000, fade: 1000}).css("background", "#f5f5f3");
 
 });
 

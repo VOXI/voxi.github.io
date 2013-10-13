@@ -2,8 +2,9 @@ body {
   margin-top: $heightHeader;
 }
 
-.row{
+.row, .clearfix{
   margin: 0 auto $sizeGutter;
+  max-width: $maxScreenWidth;
   @include self-clear;
 }
 

@@ -1,0 +1,31 @@
+.index .content-wrap{
+  .backstretch{
+    display: none;
+    @include media($screenLarge){
+      display: block;
+    }
+  }
+  
+  @include media($screenLarge){
+    background: #000;
+    box-sizing: border-box;
+    background: #000;
+    padding-top: $rhythm * 3;
+    padding-bottom: 150px;
+  }
+}
+.homepage-content{
+  @include media($screenLarge){
+    color: #fff;
+    text-shadow: $inputHoverShadow;
+  }
+
+  .button{
+    min-width: 50%;
+  }
+}
+
+.homepage-cta{
+  margin-top: $rhythm * 2;
+  text-align: center;
+}

@@ -111,14 +111,6 @@ a{
   height: 620px;
 }
 
-.goal-area-background{
-  background: #000;
-  position: fixed;
-  min-width: $minWidth;
-  width: 100%;
-  z-index: -99;
-}
-
 // Content wrapper
 .content-wrap{
   background: $colorBg;
@@ -139,4 +131,20 @@ a{
     padding: 0;
     margin: 0;
   }
+}
+
+.mobile-hide{
+  display: none;
+
+  @include media($screenLarge){
+    display: block;
+  }
+}
+
+.center{
+  text-align: center;
+}
+
+.right{
+  text-align: right;
 }
