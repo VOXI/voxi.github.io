@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100px" height="18px" viewBox="0 0 100 18"
+     xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <desc>Line for SVG grid</desc>
+
+  <g stroke="#ffbbbb" >
+    <line x1="0" y1="17" x2="100%" y2="17"
+            stroke-width="1"  />
+  </g>
+</svg>
