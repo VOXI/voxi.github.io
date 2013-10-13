@@ -9,7 +9,15 @@ gem "middleman", "~>3.1.5"
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
+# CSS post processing prefixer
 gem "middleman-autoprefixer", "~> 0.2.1"
+
+# Github Deployment
+gem "middleman-deploy", "~> 0.1.3"
+
+# Heroku deployment
+gem "rack-contrib", "~> 1.1.0"
+gem "puma", "~> 2.6.0"
 
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
@@ -18,7 +26,3 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 platforms :mri_18 do
   gem "ruby18_source_location"
 end
-
-# For Heroku deployment
-gem "rack-contrib", "~> 1.1.0"
-gem "puma", "~> 2.6.0"
