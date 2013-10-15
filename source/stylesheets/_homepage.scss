@@ -17,8 +17,32 @@
 }
 .homepage-content{
   @include media($screenLarge){
+    box-sizing: border-box;
     color: #fff;
     text-shadow: rgba(0,0,0,.5) 0 0 5px;
+    transition: height .2s ease-in-out;
+
+    @media screen and (min-height: 900px){
+      min-height: 575px;
+      padding-top: 100px;
+
+      .homepage-headline{
+        @include font-size($rhythm * 3);
+
+        br{
+          display: none;
+        }
+      }
+    }
+
+    @media screen and (min-height: 1024px){
+      min-height: 675px;
+      padding-top: 175px;
+    }
+    @media screen and (min-height: 1300px){
+      min-height: 875px;
+      padding-top: 250px;
+    }
   }
 
   .button{
