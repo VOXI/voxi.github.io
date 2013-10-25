@@ -1,17 +1,21 @@
 # File for the homepage quote carousel
 
-# When the document is ready, 
+# When the document is ready,
 $ ->
   # Timer for quotes slides
-  window.setInterval(advanceQuote, 6000)
+  window.quoteTimer = window.setTimeout(advanceQuote, 3000)
   $(window).bind('resize', quotesListHeightTimerStart)
 
+  # an animation end event listener will be added to the new slide
+  $(".goal-quotes.list li").bind('webkitAnimationEnd', resetQuotes).bind('animationend', resetQuotes)
+
 advanceQuote = ->
+  window.clearTimeout(window.quoteTimer)
   $quotesList = $(".goal-quotes.list")
   $currentQuote = $($quotesList).find(".current")
 
   $nextSlide = ->
-    $next = $($quotesList).find(".current").next()
+    $next = $($currentQuote).next()
     if $next.length > 0
       return $next
     else
@@ -20,14 +24,10 @@ advanceQuote = ->
   # The height of the container element will be locked
   $($quotesList).css("min-height", $($currentQuote).css("height"))
 
-  # an animation end event listener will be added to the new slide
-  $($nextSlide()).bind('webkitAnimationEnd', resetQuotes)
-  $($nextSlide()).bind('animationend', resetQuotes)
-  
   # the animations will be triggered
   $($nextSlide()).addClass("next")
   $($currentQuote).addClass("previous").removeClass("current")
-  
+
 
 resetQuotes = ->
   $quotesList = $(".goal-quotes.list")
@@ -42,9 +42,9 @@ resetQuotes = ->
   # the height of the container will be unlocked
   $($quotesList).css("min-height", $($currentQuote).css("height"))
 
-  # the animation event listener will be removed
-  $($currentQuote).unbind('webkitAnimationEnd')
-  $($currentQuote).unbind('animationend')
+  window.quoteTimer = window.setTimeout(advanceQuote, 3000)
+
+
 
 
 quotesListHeightTimerStart = ->
