@@ -31,7 +31,7 @@
     width: 200%;
 
     li{
-      box-sizing: border-box;
+      @include border-box;
       padding: 20px 10px;
       position: absolute;
       left: 50%;

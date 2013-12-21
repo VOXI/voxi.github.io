@@ -62,7 +62,7 @@ i, em{
 
 pre{
   @include border;
-  box-sizing: border-box;
+  @include border-box;
 }
 
 .opaque-background{

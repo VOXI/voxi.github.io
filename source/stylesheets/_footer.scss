@@ -1,4 +1,19 @@
 .site-footer{
   border-top: 1px solid rgba(0,0,0,.1);
   padding-top: 20px;
+  text-align: center;
+
+  @include media($screenLarge){
+    text-align: left;
+  }
+}
+
+.addthis_toolbox{
+  margin: 0 auto;
+  text-align: center;
+  width: 74px;
+
+  @include media($screenLarge){
+    float: right;
+  }
 }

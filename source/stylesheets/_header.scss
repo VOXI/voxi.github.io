@@ -2,14 +2,26 @@
  * Site Header & Footer
  */
 #primary-header{
-  box-sizing: border-box;
+  @include border-box;
   box-shadow: rgba(0,0,0,.3) 1px 0 2px;
   height: $heightHeader;
   padding: 20px 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 999;
+}
+.site-navigation{
+  text-align: right;
+
+  a{
+    color: $colorPrimary;
+    display: inline-block;
+    line-height: 40px;
+    position: relative;
+    top: -13px;
+    vertical-align: top;
+  }
 }
 
 /**
@@ -30,7 +42,12 @@
   }
 }
 .tagline{
-  color: #aaa;
-  @include font-size(16px);
-  vertical-align: 40%;
+  display: none;
+
+  @include media($screenLarge){
+    display: inline;
+    color: #aaa;
+    @include font-size(16px);
+    vertical-align: 40%;
+  }
 }
