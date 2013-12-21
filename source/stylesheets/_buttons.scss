@@ -29,12 +29,12 @@ button, .button, .buttons{
   }
 
   &.primary{
-    background: darken($colorPrimary, 5%);
-    border-color: darken($colorPrimary, 6%);
-    border-bottom: 2px solid darken($colorPrimary, 15%);
+    background: darken($colorPrimaryButton, 5%);
+    border-color: darken($colorPrimaryButton, 6%);
+    border-bottom: 2px solid darken($colorPrimaryButton, 15%);
 
     &:hover, &:focus{
-      background: lighten($colorPrimary, 5%);
+      background: lighten($colorPrimaryButton, 5%);
       text-decoration: none;
     }
   }
@@ -56,10 +56,10 @@ button, .button, .buttons{
   }
 
   &.is-disabled{
-    color: lighten($colorPrimary, 20%);
+    color: lighten($colorPrimaryButton, 20%);
 
     &:hover, &:focus{
-      background: darken($colorPrimary, 5%);
+      background: darken($colorPrimaryButton, 5%);
       cursor: default;
     }
   }
