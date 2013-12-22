@@ -2,6 +2,7 @@
 $fontSizeDefault: 16px;
 $maxScreenWidth: 1200px;
 
+
 // Breakpoints
 $screenLarge: 768px;
 $screenMedium: 600px;
@@ -14,16 +15,22 @@ $sizeGutter: $rhythm;
 $sizeGutterHalf: ($sizeGutter / 2);
 $sizeSiteWidth: 1200px;
 
-// $colorPrimary: #78c02c; Orig green
-// $colorPrimary: #98df4d; Brighter Green
+// Colors
 $colorPrimary: #3cc568;
 $colorBg: #f5f5f3;
 $colorBorder: #ccc;
+$colorText: #444;
 $colorPrimaryButton: $colorPrimary;
 $colorLink: rgb(0, 173, 239);
 
+// Shadows
 $inputHoverShadow: rgba(0,0,0,.2) 0 0 5px;
 
+// Font Families
+$fontstackDefault: 'Open Sans', sans-serif;
+$fontstackHeadline: 'Open Sans Condensed', sans-serif;
+
+// Easings
 $easeInOut: cubic-bezier(0.2, 0.1, 0.1, 1);
 
 @mixin border{

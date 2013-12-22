@@ -1,11 +1,11 @@
-body {
-  margin-top: $heightHeader;
-}
-
 .row, .clearfix{
-  margin: 0 auto $sizeGutter;
+  margin: 0 auto;
   max-width: $maxScreenWidth;
   @include self-clear;
+}
+
+.row{
+  margin: 0 auto $sizeGutter;
 }
 
 .columns, .column{

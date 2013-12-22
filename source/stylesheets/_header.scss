@@ -4,23 +4,73 @@
 #primary-header{
   @include border-box;
   box-shadow: rgba(0,0,0,.3) 1px 0 2px;
-  height: $heightHeader;
-  padding: 20px 0;
-  position: absolute;
+  padding: 20px 0 10px;
   top: 0;
   width: 100%;
   z-index: 999;
+
+  .clearfix{
+    position: relative;
+  }
+
+  .columns, .column{
+    margin: 0 !important;
+  }
 }
-.site-navigation{
-  text-align: right;
+
+
+/**
+ * Navigation
+ */
+.primary-navigation{
+  display: inline;
+  margin-left: 10px;
 
   a{
-    color: $colorPrimary;
+    color: $colorText;
     display: inline-block;
-    line-height: 40px;
+    @include font-size(13px);
+    font-weight: 700;
+    line-height: 36px;
     position: relative;
-    top: -13px;
-    vertical-align: top;
+    top: -6px;
+    text-transform: capitalize;
+
+    &:hover, &:focus{
+      color: $colorPrimaryButton;
+      text-decoration: none;
+    }
+
+    @include media($screenLarge){
+      top: -8px;
+    }
+  }
+
+  .button{
+    color: #fff;
+    font-weight: 300;
+    height: 36px;
+
+    @include media($screenLarge){
+      position: absolute;
+      top: -2px;
+      right: 10px;
+    }
+  }
+
+  .nav-list{
+    display: inline;
+    margin: 0;
+  }
+}
+
+.nav-list li{
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px;
+
+  &:last-child{
+    padding-right: 0;
   }
 }
 
@@ -28,8 +78,14 @@
  * Branding (temp)
  */
 .branding{
-  margin: -11px 0 0;
+  display: inline;
+  @include font-size(28px);
+
+  @include media($screenLarge){
+    @include font-size(36px);
+  }
 }
+
 .logo{
   color: $colorPrimary;
   font-weight: 700;
