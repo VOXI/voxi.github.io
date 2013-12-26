@@ -45,6 +45,7 @@
     text-transform: capitalize;
 
     &:hover, &:focus{
+      color: $colorPrimaryButton;
       text-decoration: none;
     }
 
@@ -58,6 +59,10 @@
     color: #fff;
     font-weight: 300;
     height: 36px;
+
+    &:hover, &:focus{
+      color: #fff;
+    }
 
     @include media($screenLarge){
       position: absolute;
