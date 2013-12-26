@@ -16,6 +16,14 @@
   .columns, .column{
     margin: 0 !important;
   }
+
+  @include media($screenLarge){
+    background: none;
+    box-shadow: none;
+    margin-bottom: -80px;
+    position: relative;
+    z-index: 9;
+  }
 }
 
 
@@ -42,6 +50,7 @@
     }
 
     @include media($screenLarge){
+      color: #fff;
       top: -8px;
     }
   }
@@ -95,6 +104,10 @@
     color: lighten($colorPrimary, 10%);
     text-decoration: none;
     outline: none;
+  }
+
+  @include media($screenLarge){
+    color: #fff;
   }
 }
 .tagline{

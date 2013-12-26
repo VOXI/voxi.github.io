@@ -1,4 +1,11 @@
-.index .content-wrap{
+@include media($screenLarge){
+  .index .content-wrap{
+    background: none;
+    padding-top: 0;
+  }
+}
+
+.splash-area{
   .backstretch{
     display: none;
     @include media($screenLarge){
@@ -10,47 +17,67 @@
     background: #000 url(/images/homepage-background/climbing.jpg) no-repeat center center;
     background-size: 100% auto;
     @include border-box;
+    min-height: 600px;
     padding-top: $rhythm * 4;
-    padding-bottom: 150px;
+    padding-bottom: $rhythm * 2;
     position: relative;
   }
 }
-.homepage-content{
-  @include media($screenLarge){
-    @include border-box;
-    color: #fff;
-    text-shadow: rgba(0,0,0,.5) 0 0 5px;
-    transition: height .2s ease-in-out;
 
-    @media screen and (min-height: 900px){
-      min-height: 575px;
-      padding-top: 100px;
+.video-container{
+  height: 140px;
+  margin: ($rhythm * 4) auto 0 auto;
+  max-width: 250px;
 
-      .homepage-headline{
-        @include font-size($rhythm * 3);
-
-        br{
-          display: none;
-        }
-      }
-    }
-
-    @media screen and (min-height: 1024px){
-      min-height: 675px;
-      padding-top: 175px;
-    }
-    @media screen and (min-height: 1300px){
-      min-height: 875px;
-      padding-top: 250px;
-    }
-  }
-
-  .button{
-    min-width: 50%;
+  img{
+    height: 100%;
+    width: 100%;
   }
 }
 
-.homepage-cta{
+.homepage-headline{
+  @include font-size($rhythm * 1.75);
+  font-weight: 700;
+  line-height: $rhythm * 2;
+  color: inherit;
+  text-align: center;
+
+  @include media($screenLarge){
+    color: #fff;
+    @include font-size($rhythm * 2.25);
+    font-weight: 300;
+    line-height: $rhythm * 3;
+    margin-top: $rhythm * 3;
+  }
+}
+
+.cta-area{
+  padding-top: $rhythm * 2;
+  text-align: center;
+}
+
+.cta-text{
+  @include font-size($rhythm * 1);
+}
+
+.cta-headline{
+  @include font-size($rhythm * 1.1);
+  font-weight: 700;
+  line-height: $rhythm * 1.5;
   margin-top: $rhythm * 2;
   text-align: center;
+}
+
+.button.cta-button{
+  @include box-sizing(border-box);
+  height: 60px;
+  line-height: 60px;
+  margin-top: $rhythm;
+  max-width: 400px;
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.index .site-footer{
+  border: none;
 }
