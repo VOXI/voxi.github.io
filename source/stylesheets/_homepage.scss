@@ -19,15 +19,14 @@
     }
   }
 
-  .primary-navigation a{
+  .primary-navigation a, .logo{
     color: #fff;
 
     &:hover, &:focus{
       color: $colorPrimaryButton;
     }
   }
-
-  .logo{
+  .primary-navigation .button:hover, .primary-navigation .button:focus{
     color: #fff;
   }
 }
@@ -42,7 +41,7 @@
 
   @include media($screenLarge){
     background: #000 url(/images/homepage-background/climbing.jpg) no-repeat center center;
-    background-size: auto 100%;
+    background-size: 100% auto;
     @include border-box;
     min-height: 600px;
     padding-top: $rhythm * 4;

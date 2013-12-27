@@ -2,7 +2,9 @@
   display: none;
   @include media($screenLarge){
     display: block;
+    @include box-sizing(border-box);
     bottom: 0;
+    padding-right: $rhythm;
     position: absolute;
     width: 100%;
   }
