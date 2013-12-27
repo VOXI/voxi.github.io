@@ -2,12 +2,12 @@
  * Site Header & Footer
  */
 #primary-header{
+  background: #fff;
   @include border-box;
   box-shadow: rgba(0,0,0,.3) 1px 0 2px;
   padding: 20px 0 10px;
   top: 0;
   width: 100%;
-  z-index: 999;
 
   .clearfix{
     position: relative;
@@ -18,11 +18,7 @@
   }
 
   @include media($screenLarge){
-    background: none;
-    box-shadow: none;
-    margin-bottom: -80px;
     position: relative;
-    z-index: 9;
   }
 }
 
@@ -47,11 +43,6 @@
     &:hover, &:focus{
       color: $colorPrimaryButton;
       text-decoration: none;
-    }
-
-    @include media($screenLarge){
-      color: #fff;
-      top: -8px;
     }
   }
 
@@ -108,10 +99,6 @@
     color: lighten($colorPrimary, 10%);
     text-decoration: none;
     outline: none;
-  }
-
-  @include media($screenLarge){
-    color: #fff;
   }
 }
 .tagline{

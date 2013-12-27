@@ -1,33 +1,71 @@
-@include media($screenLarge){
-  .index .content-wrap{
+.index{
+  .content-wrap{
     background: none;
     padding-top: 0;
+  }
+  .site-footer{
+    border: none;
+  }
+
+  #primary-header{
+    background: transparent none;
+    box-shadow: none;
+    margin-bottom: -70px;
+    position: relative;
+    z-index: 9;
+
+    @include media($screenLarge){
+      margin-bottom: -80px;
+    }
+  }
+
+  .primary-navigation a{
+    color: #fff;
+
+    &:hover, &:focus{
+      color: $colorPrimaryButton;
+    }
+  }
+
+  .logo{
+    color: #fff;
   }
 }
 
 .splash-area{
-  .backstretch{
-    display: none;
-    @include media($screenLarge){
-      display: block;
-    }
-  }
+  background: #000 url(/images/homepage-background/climbing-mobile.jpg) no-repeat center center;
+  background-size: 100% auto;
+  color: #fff;
+  // min-height: 40px;
+  padding-top: $rhythm * 7;
+  padding-bottom: $rhythm * 1;
 
   @include media($screenLarge){
     background: #000 url(/images/homepage-background/climbing.jpg) no-repeat center center;
-    background-size: 100% auto;
+    background-size: auto 100%;
     @include border-box;
     min-height: 600px;
     padding-top: $rhythm * 4;
     padding-bottom: $rhythm * 2;
     position: relative;
   }
+
+  .backstretch{
+    display: none;
+    @include media($screenLarge){
+      display: block;
+    }
+  }
 }
 
 .video-container{
   height: 140px;
-  margin: ($rhythm * 4) auto 0 auto;
+  margin: ($rhythm * 2) auto 0 auto;
   max-width: 250px;
+
+  @include media($screenLarge){
+    margin: ($rhythm * 4) auto 0 auto;
+  }
 
   img{
     height: 100%;
@@ -36,16 +74,14 @@
 }
 
 .homepage-headline{
-  @include font-size($rhythm * 1.75);
-  font-weight: 700;
+  @include font-size($rhythm * 1.4);
+  font-weight: 300;
   line-height: $rhythm * 2;
   color: inherit;
   text-align: center;
 
   @include media($screenLarge){
-    color: #fff;
     @include font-size($rhythm * 2.25);
-    font-weight: 300;
     line-height: $rhythm * 3;
     margin-top: $rhythm * 3;
   }
@@ -54,10 +90,6 @@
 .cta-area{
   padding-top: $rhythm * 2;
   text-align: center;
-}
-
-.cta-text{
-  @include font-size($rhythm * 1);
 }
 
 .cta-headline{
@@ -76,8 +108,4 @@
   max-width: 400px;
   text-transform: capitalize;
   width: 100%;
-}
-
-.index .site-footer{
-  border: none;
 }
