@@ -35,7 +35,6 @@
   background: #000 url(/images/homepage-background/climbing-mobile.jpg) no-repeat center center;
   background-size: 100% auto;
   color: #fff;
-  // min-height: 40px;
   padding-top: $rhythm * 7;
   padding-bottom: $rhythm * 1;
 
@@ -47,13 +46,6 @@
     padding-top: $rhythm * 4;
     padding-bottom: $rhythm * 2;
     position: relative;
-  }
-
-  .backstretch{
-    display: none;
-    @include media($screenLarge){
-      display: block;
-    }
   }
 }
 
