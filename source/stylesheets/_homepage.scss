@@ -1,3 +1,7 @@
+.subhead{
+
+}
+
 .index{
   .content-wrap{
     background: none;
@@ -47,6 +51,10 @@
     padding-bottom: $rhythm * 2;
     position: relative;
   }
+
+  p{
+    margin-top: $rhythm * 2;
+  }
 }
 
 .video-container{
@@ -74,7 +82,7 @@
   @include media($screenLarge){
     @include font-size($rhythm * 2.25);
     line-height: $rhythm * 3;
-    margin-top: $rhythm * 3;
+    margin-top: $rhythm * 5;
   }
 }
 
@@ -84,11 +92,15 @@
 }
 
 .cta-headline{
-  @include font-size($rhythm * 1.1);
+  @include font-size($rhythm);
   font-weight: 700;
   line-height: $rhythm * 1.5;
   margin-top: $rhythm * 2;
   text-align: center;
+
+  @include media($screenLarge){
+    @include font-size($rhythm * 1.1);
+  }
 }
 
 .button.cta-button{
