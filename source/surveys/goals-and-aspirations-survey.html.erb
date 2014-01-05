@@ -18,6 +18,6 @@ var s = d.createElement(t), options = {
 s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
 s.onload = s.onreadystatechange = function() {
 var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { mwjoean17aiozl = new WufooForm();mwjoean17aiozl.initialize(options);mwjoean17aiozl.display(); } catch (e) {}};
+try { mwjoean17aiozl = new WufooForm();mwjoean17aiozl.initialize(options);mwjoean17aiozl.display(); window.console.log("Wufoo loaded"); } catch (e) {}};
 var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
 })(document, 'script');</script>
