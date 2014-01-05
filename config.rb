@@ -9,11 +9,11 @@
 activate :directory_indexes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def splash_path(image)
+    return asset_path(:images, "/images/homepage-background/#{image}")
+  end
+end
 set :build_dir, "tmp"
 
 set :css_dir, 'stylesheets'
