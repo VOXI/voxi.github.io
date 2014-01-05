@@ -22,6 +22,9 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+# Needed for non-root level deployment
+# set :relative_links, true
+
 # Build-specific configuration
 configure :build do
   # Autoprefix CSS
