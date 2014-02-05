@@ -58,18 +58,12 @@
 }
 
 .video-container{
-  height: 140px;
-  margin: ($rhythm * 2) auto 0 auto;
-  max-width: 250px;
+  margin: ($rhythm * 2) 0 0;
+  // // max-width: 250px;
 
-  @include media($screenLarge){
-    margin: ($rhythm * 4) auto 0 auto;
-  }
-
-  img{
-    height: 100%;
-    width: 100%;
-  }
+  // @include media($screenLarge){
+  //   margin: ($rhythm * 4) auto 0 auto;
+  // }
 }
 
 .homepage-headline{
