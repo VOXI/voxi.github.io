@@ -52,7 +52,7 @@ activate :deploy do |deploy|
 
   # Optional Settings
   # deploy.remote = "custom-remote" # remote name or git url, default: origin
-  # deploy.branch = "custom-branch" # default: gh-pages
+  deploy.branch = "master" # default: gh-pages
 end
 
 # Reload the browser automatically whenever files change
