@@ -8,7 +8,15 @@
   <meta name='language' content='en'>
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta property="og:site_name" content="VOXi">
+  <meta name="twitter:site" content="@MyVOXi">
+  <title><%= if current_page.data.title then "#{current_page.data.title} | Voxi" else "Voxi | Helping dreamers achieve their goals" end %></title>
+<% if current_page.data.meta_description %>
+  <meta name="description" content="<%= current_page.data.meta_description %>">
+  <meta property="og:description" content="<%= current_page.data.meta_description %>">
+<% end %>
+  <meta property="og:url" content="<%= "http://voxi.co#{current_page.url}" %>">
 <% if current_page.data.title %>
   <meta property="og:title" content="<%= current_page.data.title %>">
   <meta name="twitter:title" content ="<%= current_page.data.title %>">
@@ -18,12 +26,10 @@
 <% end %>
 <% if current_page.data.meta_thumbnails %>
   <% current_page.data.meta_thumbnails.each do |img| %>
-  <meta property="og:image" content="<%= "http://voxi.co#{image_path img}" %>">
+  <meta property="og:image" content="<%= "http://voxi.co/#{image_path img}" %>">
   <% end %>
 <% end %>
-  <meta name="twitter:site" content="@MyVOXi">
 
-  <title><%= if current_page.data.title then "#{current_page.data.title} | Voxi" else "Voxi | Helping dreamers achieve their goals" end %></title>
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag "screen" %>
