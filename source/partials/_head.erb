@@ -8,6 +8,12 @@
   <meta name='language' content='en'>
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="og:site_name" content="VOXi">
+  <% if current_page.data.meta_thumbnails %>
+    <% current_page.data.meta_thumbnails.each do |img| %>
+      <meta name="og:image" content="<%= image_path img %>">
+    <% end %>
+  <% end %>
 
   <title><%= if current_page.data.title then "#{current_page.data.title} | Voxi" else "Voxi | Helping dreamers achieve their goals" end %></title>
 
